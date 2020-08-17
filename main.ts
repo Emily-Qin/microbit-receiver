@@ -154,9 +154,9 @@ radio.onReceivedString(function (receivedString) {
 
     basic.showString(decodedLetter);
     //trying to test when it doesn't send
-    let sendorNo = randint(0, 1)
-    if (sendorNo > 0) {
+   // let sendorNo = randint(0, 1)
+    //if (sendorNo > 0) {
         radio.sendString(decodedLetter);
-    }
+    //}
 
 })
