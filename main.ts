@@ -151,12 +151,12 @@ radio.onReceivedString(function (receivedString) {
     else {
         decodedLetter = "Invalid"
     }
-
+    basic.pause(500)
     basic.showString(decodedLetter);
     //trying to test when it doesn't send
-   // let sendorNo = randint(0, 1)
-    //if (sendorNo > 0) {
+     let sendorNo = randint(0, 2)
+     //let sendorNo = 0
+     if (sendorNo > 0) {
         radio.sendString(decodedLetter);
-    //}
-
+     }
 })
